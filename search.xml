@@ -18,13 +18,71 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
+        <category>Docs</category>
+      </categories>
+      <tags>
+        <tag>helloworld</tag>
+        <tag>docs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Test</title>
+    <url>/posts/test/</url>
+    <content><![CDATA[<div class="note orange icon-padding flat"><i class="note-icon fas fa-language"></i><p>Note orange</p>
+</div>
+
+<div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>Note blue 1<br>Note blue 2</p>
+</div>
+
+<div class="note green icon-padding flat"><i class="note-icon fas fa-rocket"></i><p> 📚  Table of Contents</p>
+<p><a href="/posts/hello-world/" title="Hello World">🚀 Hello World</a> - <a href="/posts/hello-world/" title="Hello World">📑 Hello World2</a></p>
+</div>
+
+<hr>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><div class="tabs" id="butterfly-install"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#butterfly-install-1"><i class="fab fa-github-square"></i>Test</button></li><li class="tab"><button type="button" data-href="#butterfly-install-2"><i class="fab fa-git-square"></i>Test2</button></li><li class="tab"><button type="button" data-href="#butterfly-install-3"><i class="fab fa-npm"></i>Test3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="butterfly-install-1"><p><strong>Stable Version [Recommended]</strong></p>
+<p>Inside your Hexo root directory, run:</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://github.com/jerryc127/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dev Version</strong></p>
+<blockquote>
+<p>The dev version may contain bugs. If you prefer stability, please install the stable version</p>
+</blockquote>
+<p>If you want to install a newer dev branch, you can run:</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> dev https://github.com/jerryc127/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure>
+
+<div class="note info flat"><p>Upgrade method: Run git pull in the theme directory.</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-2"><p><strong>Stable Version [Recommended]</strong></p>
+<p>Inside your Hexo root directory, run:</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure>
+
+<p><strong>Dev Version</strong></p>
+<blockquote>
+<p>The dev version may contain bugs. If you prefer stability, please install the stable version.</p>
+</blockquote>
+<p>If you want to install a newer dev branch, you can run:</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> dev https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure>
+
+<div class="note info flat"><p>Upgrade method: Run <code>git pull</code> in the theme directory.</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-3"><blockquote>
+<p>This method only supports Hexo 5.0.0 and above.</p>
+<p>Installing via npm will not generate a theme folder inside the themes directory, instead, it will be generated in the node_modules directory.</p>
+</blockquote>
+<p>Inside your Hexo root directory, run:</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">npm install hexo<span class="literal">-theme-butterfly</span></span><br></pre></td></tr></table></figure>
+
+<div class="note info flat"><p>Upgrade method: Run <code>npm update hexo-theme-butterfly</code> in the Hexo root directory.</p>
+</div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div>
+
+<a class="btn-beautify block right larger" href="/posts/hello-world/" 
+  title="📑 Hello World"><i class="far fa-hand-point-right"></i><span>📑 Hello World</span></a>
+]]></content>
+      <categories>
         <category>Test</category>
         <category>Docs</category>
       </categories>
       <tags>
-        <tag>test</tag>
-        <tag>helloworld</tag>
         <tag>docs</tag>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
