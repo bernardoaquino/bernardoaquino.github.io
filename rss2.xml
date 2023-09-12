@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bernardo Aquino</title>
+    <link>https://bernardoaquino.github.io/</link>
+    
+    <atom:link href="https://bernardoaquino.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>This is my personal knowledge-base. Here you&#39;ll find code-snippets, technical documentation, and command reference for various tools, and technologies.</description>
+    <pubDate>Sun, 10 Sep 2023 22:02:19 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Test</title>
+      <link>https://bernardoaquino.github.io/posts/test/</link>
+      <guid>https://bernardoaquino.github.io/posts/test/</guid>
+      <pubDate>Sun, 10 Sep 2023 03:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;div class=&quot;note orange icon-padding flat&quot;&gt;&lt;i class=&quot;note-icon fas fa-language&quot;&gt;&lt;/i&gt;&lt;p&gt;Note orange&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;note blue icon-pa</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<div class="note orange icon-padding flat"><i class="note-icon fas fa-language"></i><p>Note orange</p></div><div class="note blue icon-padding flat"><i class="note-icon fas fa-bullhorn"></i><p>Note blue 1<br>Note blue 2</p></div><div class="note green icon-padding flat"><i class="note-icon fas fa-rocket"></i><p> 📚  Table of Contents</p><p><a href="/posts/hello-world/" title="Hello World">🚀 Hello World</a> - <a href="/posts/hello-world/" title="Hello World">📑 Hello World2</a></p></div><hr><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><div class="tabs" id="butterfly-install"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#butterfly-install-1"><i class="fab fa-github-square"></i>Test</button></li><li class="tab"><button type="button" data-href="#butterfly-install-2"><i class="fab fa-git-square"></i>Test2</button></li><li class="tab"><button type="button" data-href="#butterfly-install-3"><i class="fab fa-npm"></i>Test3</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="butterfly-install-1"><p><strong>Stable Version [Recommended]</strong></p><p>Inside your Hexo root directory, run:</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://github.com/jerryc127/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><p><strong>Dev Version</strong></p><blockquote><p>The dev version may contain bugs. If you prefer stability, please install the stable version</p></blockquote><p>If you want to install a newer dev branch, you can run:</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> dev https://github.com/jerryc127/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><div class="note info flat"><p>Upgrade method: Run git pull in the theme directory.</p></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-2"><p><strong>Stable Version [Recommended]</strong></p><p>Inside your Hexo root directory, run:</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> master https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><p><strong>Dev Version</strong></p><blockquote><p>The dev version may contain bugs. If you prefer stability, please install the stable version.</p></blockquote><p>If you want to install a newer dev branch, you can run:</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone <span class="literal">-b</span> dev https://gitee.com/immyw/hexo<span class="literal">-theme-butterfly</span>.git themes/butterfly</span><br></pre></td></tr></table></figure><div class="note info flat"><p>Upgrade method: Run <code>git pull</code> in the theme directory.</p></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-3"><blockquote><p>This method only supports Hexo 5.0.0 and above.</p><p>Installing via npm will not generate a theme folder inside the themes directory, instead, it will be generated in the node_modules directory.</p></blockquote><p>Inside your Hexo root directory, run:</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-theme-butterfly</span></span><br></pre></td></tr></table></figure><div class="note info flat"><p>Upgrade method: Run <code>npm update hexo-theme-butterfly</code> in the Hexo root directory.</p></div><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><a class="btn-beautify block right larger" href="/posts/hello-world/"   title="📑 Hello World"><i class="far fa-hand-point-right"></i><span>📑 Hello World</span></a>]]></content:encoded>
+      
+      
+      <category domain="https://bernardoaquino.github.io/categories/Test/">Test</category>
+      
+      
+      <category domain="https://bernardoaquino.github.io/tags/test/">test</category>
+      
+      <category domain="https://bernardoaquino.github.io/tags/docs/">docs</category>
+      
+      
+      <comments>https://bernardoaquino.github.io/posts/test/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://bernardoaquino.github.io/posts/hello-world/</link>
+      <guid>https://bernardoaquino.github.io/posts/hello-world/</guid>
+      <pubDate>Sat, 09 Sep 2023 03:00:00 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content:encoded>
+      
+      
+      <category domain="https://bernardoaquino.github.io/categories/Docs/">Docs</category>
+      
+      
+      <category domain="https://bernardoaquino.github.io/tags/docs/">docs</category>
+      
+      <category domain="https://bernardoaquino.github.io/tags/helloworld/">helloworld</category>
+      
+      
+      <comments>https://bernardoaquino.github.io/posts/hello-world/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
