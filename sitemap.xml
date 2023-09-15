@@ -58,29 +58,29 @@
 
   <url>
     <loc>https://bernardoaquino.github.io/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://bernardoaquino.github.io/tags/test/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <loc>https://bernardoaquino.github.io/tags/helloworld/</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bernardoaquino.github.io/tags/docs/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/tags/helloworld/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <loc>https://bernardoaquino.github.io/tags/test/</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -88,15 +88,15 @@
 
   
   <url>
-    <loc>https://bernardoaquino.github.io/categories/Test/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <loc>https://bernardoaquino.github.io/categories/Docs/</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/categories/Docs/</loc>
-    <lastmod>2023-09-12</lastmod>
+    <loc>https://bernardoaquino.github.io/categories/Test/</loc>
+    <lastmod>2023-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

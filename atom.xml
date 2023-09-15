@@ -39,9 +39,9 @@
     <category term="Test" scheme="https://bernardoaquino.github.io/categories/Test/"/>
     
     
-    <category term="test" scheme="https://bernardoaquino.github.io/tags/test/"/>
-    
     <category term="docs" scheme="https://bernardoaquino.github.io/tags/docs/"/>
+    
+    <category term="test" scheme="https://bernardoaquino.github.io/tags/test/"/>
     
   </entry>
   
@@ -65,9 +65,9 @@
     <category term="Docs" scheme="https://bernardoaquino.github.io/categories/Docs/"/>
     
     
-    <category term="docs" scheme="https://bernardoaquino.github.io/tags/docs/"/>
-    
     <category term="helloworld" scheme="https://bernardoaquino.github.io/tags/helloworld/"/>
+    
+    <category term="docs" scheme="https://bernardoaquino.github.io/tags/docs/"/>
     
   </entry>
   
