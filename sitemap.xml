@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</loc>
+    
+    <lastmod>2023-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/</loc>
+    
+    <lastmod>2023-09-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bernardoaquino.github.io/about/</loc>
     
     <lastmod>2023-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bernardoaquino.github.io/posts/test/</loc>
-    
-    <lastmod>2023-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bernardoaquino.github.io/posts/hello-world/</loc>
-    
-    <lastmod>2023-09-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,29 +58,36 @@
 
   <url>
     <loc>https://bernardoaquino.github.io/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://bernardoaquino.github.io/tags/helloworld/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <loc>https://bernardoaquino.github.io/tags/Tutorials/</loc>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/tags/docs/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <loc>https://bernardoaquino.github.io/tags/Docker/</loc>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/tags/test/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <loc>https://bernardoaquino.github.io/tags/Ubuntu/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/tags/Portainer/</loc>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -88,15 +95,22 @@
 
   
   <url>
-    <loc>https://bernardoaquino.github.io/categories/Docs/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <loc>https://bernardoaquino.github.io/categories/Tutorials/</loc>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/categories/Test/</loc>
-    <lastmod>2023-09-15</lastmod>
+    <loc>https://bernardoaquino.github.io/categories/Tutorials/Docker/</loc>
+    <lastmod>2023-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/categories/Tutorials/Docker/Portainer/</loc>
+    <lastmod>2023-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
