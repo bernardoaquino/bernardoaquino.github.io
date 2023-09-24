@@ -3,11 +3,11 @@
   <title>Bernardo Aquino</title>
   
   <subtitle>Portfolio Blog</subtitle>
-  <link href="https://bernardoaquino.tech/atom.xml" rel="self"/>
+  <link href="https://bernardoaquino.github.io/atom.xml" rel="self"/>
   
-  <link href="https://bernardoaquino.tech/"/>
+  <link href="https://bernardoaquino.github.io/"/>
   <updated>2023-09-24T00:21:04.226Z</updated>
-  <id>https://bernardoaquino.tech/</id>
+  <id>https://bernardoaquino.github.io/</id>
   
   <author>
     <name>Bernardo Aquino</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>How to Install and Configure Traefik on Docker</title>
-    <link href="https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/"/>
-    <id>https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/</id>
+    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/"/>
+    <id>https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/</id>
     <published>2023-09-23T03:00:00.000Z</published>
     <updated>2023-09-24T00:21:04.226Z</updated>
     
@@ -30,25 +30,25 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
     
-    <category term="Traefik" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Traefik/"/>
+    <category term="Traefik" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Traefik/"/>
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
     
-    <category term="Traefik" scheme="https://bernardoaquino.tech/tags/Traefik/"/>
+    <category term="Traefik" scheme="https://bernardoaquino.github.io/tags/Traefik/"/>
     
   </entry>
   
   <entry>
     <title>How to Install and Set Up Docker on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
+    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
     <published>2023-09-22T03:00:00.000Z</published>
     <updated>2023-09-22T14:38:54.159Z</updated>
     
@@ -59,23 +59,23 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
     
-    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>How to Install Portainer on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
+    <link href="https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
     <published>2023-09-22T03:00:00.000Z</published>
     <updated>2023-09-22T14:38:29.556Z</updated>
     
@@ -86,20 +86,20 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
     
-    <category term="Portainer" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/"/>
+    <category term="Portainer" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Portainer/"/>
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
     
-    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
     
-    <category term="Portainer" scheme="https://bernardoaquino.tech/tags/Portainer/"/>
+    <category term="Portainer" scheme="https://bernardoaquino.github.io/tags/Portainer/"/>
     
   </entry>
   
