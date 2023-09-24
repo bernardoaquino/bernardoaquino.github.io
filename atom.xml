@@ -3,11 +3,11 @@
   <title>Bernardo Aquino</title>
   
   <subtitle>Portfolio Blog</subtitle>
-  <link href="https://bernardoaquino.github.io/atom.xml" rel="self"/>
+  <link href="https://bernardoaquino.tech/atom.xml" rel="self"/>
   
-  <link href="https://bernardoaquino.github.io/"/>
+  <link href="https://bernardoaquino.tech/"/>
   <updated>2023-09-24T00:21:04.226Z</updated>
-  <id>https://bernardoaquino.github.io/</id>
+  <id>https://bernardoaquino.tech/</id>
   
   <author>
     <name>Bernardo Aquino</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>How to Install and Configure Traefik on Docker</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/</id>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/</id>
     <published>2023-09-23T03:00:00.000Z</published>
     <updated>2023-09-24T00:21:04.226Z</updated>
     
@@ -30,52 +30,25 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
     
-    <category term="Traefik" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Traefik/"/>
-    
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
-    
-    <category term="Traefik" scheme="https://bernardoaquino.github.io/tags/Traefik/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to Install and Set Up Docker on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
-    <published>2023-09-22T03:00:00.000Z</published>
-    <updated>2023-09-22T14:38:54.159Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Installation-methods"><a href="#Installation-methods" class="headerlink" title="Installation methods"></a>Installation methods</h2><p>You can install Docker Engine in different ways. In this case, I will install using the Apt repository</p><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul><li>One Ubuntu 22.04 server set up</li></ul><h2 id="Step-1-Set-up-Docker’s-Apt-repository"><a href="#Step-1-Set-up-Docker’s-Apt-repository" class="headerlink" title="Step 1 - Set up Docker’s Apt repository"></a>Step 1 - Set up Docker’s Apt repository</h2><p>First, update and upgrade existing list of packages:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt upgrade</span><br></pre></td></tr></table></figure><p>Next, uninstall old versions:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> pkg <span class="keyword">in</span> docker.io docker-doc docker-compose podman-docker containerd runc; <span class="keyword">do</span> sudo apt-get remove <span class="variable">$pkg</span>; <span class="keyword">done</span></span><br></pre></td></tr></table></figure><p>Add Docker’s official GPG key:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ca-certificates curl gnupg</span><br><span class="line">sudo install -m 0755 -d /etc/apt/keyrings</span><br><span class="line"></span><br><span class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span><br><span class="line"></span><br><span class="line">sudo <span class="built_in">chmod</span> a+r /etc/apt/keyrings/docker.gpg</span><br></pre></td></tr></table></figure><p>Add the repository to Apt sources:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> \</span><br><span class="line">  <span class="string">&quot;deb [arch=&quot;</span>$(dpkg --print-architecture)<span class="string">&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \</span></span><br><span class="line"><span class="string">  &quot;</span>$(. /etc/os-release &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$VERSION_CODENAME</span>&quot;</span>)<span class="string">&quot; stable&quot;</span> | \</span><br><span class="line">  sudo <span class="built_in">tee</span> /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h2 id="Step-2-Install-the-Docker-packages"><a href="#Step-2-Install-the-Docker-packages" class="headerlink" title="Step 2 - Install the Docker packages"></a>Step 2 - Install the Docker packages</h2><p>Will install the latest version:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br></pre></td></tr></table></figure><p>Check if is running:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure><p>More info: <a href="https://docs.docker.com/engine/install/ubuntu/">Docker</a></p><h2 id="Bonus-Swarm-mode"><a href="#Bonus-Swarm-mode" class="headerlink" title="Bonus - Swarm mode"></a>Bonus - Swarm mode</h2><p>Create a new swarm:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker swarm init --advertise-addr &lt;IP&gt;</span><br></pre></td></tr></table></figure><p>Example:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker swarm init --advertise-addr 192.168.99.100</span></span><br><span class="line">Swarm initialized: current node (dxn1zf6l61qsb1josjja83ngz) is now a manager.</span><br><span class="line"></span><br><span class="line">To add a worker to this swarm, run the following <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">    docker swarm <span class="built_in">join</span> \</span><br><span class="line">    --token SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c \</span><br><span class="line">    192.168.99.100:2377</span><br><span class="line"></span><br><span class="line">To add a manager to this swarm, run <span class="string">&#x27;docker swarm join-token manager&#x27;</span> and follow the instructions.</span><br></pre></td></tr></table></figure><p>More info: <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/">Docker Swarm</a></p><div class="note info flat"><p>Sorry for any grammatical or spelling errors. I am practicing my english.</p></div>]]></content>
+    <category term="Traefik" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Traefik/"/>
     
     
-    <summary type="html">This post contains information on how to install and launch Docker on an Ubuntu distribution.</summary>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
     
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
     
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
-    
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
-    
-    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
+    <category term="Traefik" scheme="https://bernardoaquino.tech/tags/Traefik/"/>
     
   </entry>
   
   <entry>
     <title>How to Install Portainer on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
     <published>2023-09-22T03:00:00.000Z</published>
     <updated>2023-09-22T14:38:29.556Z</updated>
     
@@ -86,20 +59,47 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
     
-    <category term="Portainer" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Portainer/"/>
+    <category term="Portainer" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/"/>
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
     
-    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
+    <category term="Portainer" scheme="https://bernardoaquino.tech/tags/Portainer/"/>
     
-    <category term="Portainer" scheme="https://bernardoaquino.github.io/tags/Portainer/"/>
+    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Install and Set Up Docker on Ubuntu 22.04</title>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
+    <published>2023-09-22T03:00:00.000Z</published>
+    <updated>2023-09-22T14:38:54.159Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Installation-methods"><a href="#Installation-methods" class="headerlink" title="Installation methods"></a>Installation methods</h2><p>You can install Docker Engine in different ways. In this case, I will install using the Apt repository</p><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul><li>One Ubuntu 22.04 server set up</li></ul><h2 id="Step-1-Set-up-Docker’s-Apt-repository"><a href="#Step-1-Set-up-Docker’s-Apt-repository" class="headerlink" title="Step 1 - Set up Docker’s Apt repository"></a>Step 1 - Set up Docker’s Apt repository</h2><p>First, update and upgrade existing list of packages:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt upgrade</span><br></pre></td></tr></table></figure><p>Next, uninstall old versions:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> pkg <span class="keyword">in</span> docker.io docker-doc docker-compose podman-docker containerd runc; <span class="keyword">do</span> sudo apt-get remove <span class="variable">$pkg</span>; <span class="keyword">done</span></span><br></pre></td></tr></table></figure><p>Add Docker’s official GPG key:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ca-certificates curl gnupg</span><br><span class="line">sudo install -m 0755 -d /etc/apt/keyrings</span><br><span class="line"></span><br><span class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span><br><span class="line"></span><br><span class="line">sudo <span class="built_in">chmod</span> a+r /etc/apt/keyrings/docker.gpg</span><br></pre></td></tr></table></figure><p>Add the repository to Apt sources:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> \</span><br><span class="line">  <span class="string">&quot;deb [arch=&quot;</span>$(dpkg --print-architecture)<span class="string">&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \</span></span><br><span class="line"><span class="string">  &quot;</span>$(. /etc/os-release &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$VERSION_CODENAME</span>&quot;</span>)<span class="string">&quot; stable&quot;</span> | \</span><br><span class="line">  sudo <span class="built_in">tee</span> /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br><span class="line"></span><br><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure><h2 id="Step-2-Install-the-Docker-packages"><a href="#Step-2-Install-the-Docker-packages" class="headerlink" title="Step 2 - Install the Docker packages"></a>Step 2 - Install the Docker packages</h2><p>Will install the latest version:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br></pre></td></tr></table></figure><p>Check if is running:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure><p>More info: <a href="https://docs.docker.com/engine/install/ubuntu/">Docker</a></p><h2 id="Bonus-Swarm-mode"><a href="#Bonus-Swarm-mode" class="headerlink" title="Bonus - Swarm mode"></a>Bonus - Swarm mode</h2><p>Create a new swarm:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker swarm init --advertise-addr &lt;IP&gt;</span><br></pre></td></tr></table></figure><p>Example:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker swarm init --advertise-addr 192.168.99.100</span></span><br><span class="line">Swarm initialized: current node (dxn1zf6l61qsb1josjja83ngz) is now a manager.</span><br><span class="line"></span><br><span class="line">To add a worker to this swarm, run the following <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">    docker swarm <span class="built_in">join</span> \</span><br><span class="line">    --token SWMTKN-1-49nj1cmql0jkz5s954yi3oex3nedyz0fb0xx14ie39trti4wxv-8vxv8rssmk743ojnwacrr2e7c \</span><br><span class="line">    192.168.99.100:2377</span><br><span class="line"></span><br><span class="line">To add a manager to this swarm, run <span class="string">&#x27;docker swarm join-token manager&#x27;</span> and follow the instructions.</span><br></pre></td></tr></table></figure><p>More info: <a href="https://docs.docker.com/engine/swarm/swarm-tutorial/">Docker Swarm</a></p><div class="note info flat"><p>Sorry for any grammatical or spelling errors. I am practicing my english.</p></div>]]></content>
+    
+    
+    <summary type="html">This post contains information on how to install and launch Docker on an Ubuntu distribution.</summary>
+    
+    
+    
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
+    
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
+    
+    
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
+    
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
+    
+    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
     
   </entry>
   
