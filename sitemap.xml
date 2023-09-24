@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bernardoaquino.github.io/link/</loc>
+    
+    <lastmod>2023-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/</loc>
+    
+    <lastmod>2023-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</loc>
     
     <lastmod>2023-09-22</lastmod>
@@ -29,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://bernardoaquino.github.io/link/</loc>
-    
-    <lastmod>2023-09-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://bernardoaquino.github.io/tags/</loc>
     
     <lastmod>2023-09-09</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>https://bernardoaquino.github.io/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,28 +75,35 @@
   
   <url>
     <loc>https://bernardoaquino.github.io/tags/Tutorials/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bernardoaquino.github.io/tags/Docker/</loc>
-    <lastmod>2023-09-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bernardoaquino.github.io/tags/Ubuntu/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bernardoaquino.github.io/tags/Portainer/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/tags/Ubuntu/</loc>
+    <lastmod>2023-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/tags/Traefik/</loc>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -96,21 +112,28 @@
   
   <url>
     <loc>https://bernardoaquino.github.io/categories/Tutorials/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bernardoaquino.github.io/categories/Tutorials/Docker/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bernardoaquino.github.io/categories/Tutorials/Docker/Portainer/</loc>
-    <lastmod>2023-09-22</lastmod>
+    <lastmod>2023-09-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bernardoaquino.github.io/categories/Tutorials/Docker/Traefik/</loc>
+    <lastmod>2023-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
