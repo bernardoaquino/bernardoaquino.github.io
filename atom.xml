@@ -3,11 +3,11 @@
   <title>Bernardo Aquino</title>
   
   <subtitle>Portfolio Blog</subtitle>
-  <link href="https://bernardoaquino.github.io/atom.xml" rel="self"/>
+  <link href="https://bernardoaquino.tech/atom.xml" rel="self"/>
   
-  <link href="https://bernardoaquino.github.io/"/>
+  <link href="https://bernardoaquino.tech/"/>
   <updated>2023-09-24T00:21:04.226Z</updated>
-  <id>https://bernardoaquino.github.io/</id>
+  <id>https://bernardoaquino.tech/</id>
   
   <author>
     <name>Bernardo Aquino</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>How to Install and Configure Traefik on Docker</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-and-configure-traefik-on-docker/</id>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/</id>
     <published>2023-09-23T03:00:00.000Z</published>
     <updated>2023-09-24T00:21:04.226Z</updated>
     
@@ -30,56 +30,25 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
     
-    <category term="Traefik" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Traefik/"/>
-    
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
-    
-    <category term="Traefik" scheme="https://bernardoaquino.github.io/tags/Traefik/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>How to Install Portainer on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
-    <published>2023-09-22T03:00:00.000Z</published>
-    <updated>2023-09-22T14:38:29.556Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Portainer-Version"><a href="#Portainer-Version" class="headerlink" title="Portainer Version"></a>Portainer Version</h2><p>In this post, I will use the Community Edition.</p><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul><li>Docker installed and working on Ubuntu 22.04</li></ul><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><div class="tabs" id="butterfly-install"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#butterfly-install-1"><i class="fab fa-docker"></i>Docker</button></li><li class="tab"><button type="button" data-href="#butterfly-install-2"><i class="fab fa-docker"></i>Docker Swarm</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="butterfly-install-1"><p>First, create the volume that Portainer Server will use to store its database:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume create portainer_data</span><br></pre></td></tr></table></figure><p>Then, download and install the Portainer Server container:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest</span><br></pre></td></tr></table></figure><p>Running <code>docker ps</code>:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID   IMAGE                          COMMAND                  CREATED       STATUS      PORTS                                                                                  NAMES</span><br><span class="line">de5b28eb2fa9   portainer/portainer-ce:latest  <span class="string">&quot;/portainer&quot;</span>             2 weeks ago   Up 9 days   0.0.0.0:8000-&gt;8000/tcp, :::8000-&gt;8000/tcp, 0.0.0.0:9443-&gt;9443/tcp, :::9443-&gt;9443/tcp   portainer</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-2"><p>First, retrieve the stack YML manifest:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://downloads.portainer.io/ce2-19/portainer-agent-stack.yml -o portainer-agent-stack.yml</span><br></pre></td></tr></table></figure><p>Then use the downloaded YML manifest to deploy your stack:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stack deploy -c portainer-agent-stack.yml portainer</span><br></pre></td></tr></table></figure><p>Running <code>docker ps</code>:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS              PORTS                NAMES</span><br><span class="line">59ee466f6b15   portainer/agent:latest          <span class="string">&quot;./agent&quot;</span>                About a minute ago   Up About a minute                        portainer_agent.xbb8k6r7j1tk9gozjku7e43wr.5sa6b3e8cl6hyu0snlt387sgv</span><br><span class="line">2db7dd4bfba0   portainer/portainer-ce:latest   <span class="string">&quot;/portainer -H tcp:/…&quot;</span>   About a minute ago   Up About a minute   8000/tcp, 9443/tcp   portainer_portainer.1.gpuvu3pqmt1m19zxfo44v7izx</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h2 id="Accessing"><a href="#Accessing" class="headerlink" title="Accessing"></a>Accessing</h2><p>Access the Portainer Server on web browser:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://localhost:9443</span><br></pre></td></tr></table></figure><p>Replace <code>localhost</code> with the relevant IP address.</p><p>More info: <a href="https://docs.portainer.io/start/install-ce">Portainer</a></p><div class="note info flat"><p>Sorry for any grammatical or spelling errors. I am practicing my english.</p></div>]]></content>
+    <category term="Traefik" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Traefik/"/>
     
     
-    <summary type="html">This post contains information on how to install and launch Portainer on an Ubuntu distribution.</summary>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
     
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
     
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
-    
-    <category term="Portainer" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/Portainer/"/>
-    
-    
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
-    
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
-    
-    <category term="Portainer" scheme="https://bernardoaquino.github.io/tags/Portainer/"/>
-    
-    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
+    <category term="Traefik" scheme="https://bernardoaquino.tech/tags/Traefik/"/>
     
   </entry>
   
   <entry>
     <title>How to Install and Set Up Docker on Ubuntu 22.04</title>
-    <link href="https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
-    <id>https://bernardoaquino.github.io/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-and-set-up-docker-on-ubuntu-22-04/</id>
     <published>2023-09-22T03:00:00.000Z</published>
     <updated>2023-09-22T14:38:54.159Z</updated>
     
@@ -90,16 +59,47 @@
     
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/categories/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/categories/Tutorials/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
     
     
-    <category term="Tutorials" scheme="https://bernardoaquino.github.io/tags/Tutorials/"/>
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
     
-    <category term="Docker" scheme="https://bernardoaquino.github.io/tags/Docker/"/>
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
     
-    <category term="Ubuntu" scheme="https://bernardoaquino.github.io/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to Install Portainer on Ubuntu 22.04</title>
+    <link href="https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/"/>
+    <id>https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/</id>
+    <published>2023-09-22T03:00:00.000Z</published>
+    <updated>2023-09-22T14:38:29.556Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Portainer-Version"><a href="#Portainer-Version" class="headerlink" title="Portainer Version"></a>Portainer Version</h2><p>In this post, I will use the Community Edition.</p><h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><ul><li>Docker installed and working on Ubuntu 22.04</li></ul><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><div class="tabs" id="butterfly-install"><ul class="nav-tabs"><li class="tab active"><button type="button" data-href="#butterfly-install-1"><i class="fab fa-docker"></i>Docker</button></li><li class="tab"><button type="button" data-href="#butterfly-install-2"><i class="fab fa-docker"></i>Docker Swarm</button></li></ul><div class="tab-contents"><div class="tab-item-content active" id="butterfly-install-1"><p>First, create the volume that Portainer Server will use to store its database:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker volume create portainer_data</span><br></pre></td></tr></table></figure><p>Then, download and install the Portainer Server container:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest</span><br></pre></td></tr></table></figure><p>Running <code>docker ps</code>:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID   IMAGE                          COMMAND                  CREATED       STATUS      PORTS                                                                                  NAMES</span><br><span class="line">de5b28eb2fa9   portainer/portainer-ce:latest  <span class="string">&quot;/portainer&quot;</span>             2 weeks ago   Up 9 days   0.0.0.0:8000-&gt;8000/tcp, :::8000-&gt;8000/tcp, 0.0.0.0:9443-&gt;9443/tcp, :::9443-&gt;9443/tcp   portainer</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div><div class="tab-item-content" id="butterfly-install-2"><p>First, retrieve the stack YML manifest:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://downloads.portainer.io/ce2-19/portainer-agent-stack.yml -o portainer-agent-stack.yml</span><br></pre></td></tr></table></figure><p>Then use the downloaded YML manifest to deploy your stack:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stack deploy -c portainer-agent-stack.yml portainer</span><br></pre></td></tr></table></figure><p>Running <code>docker ps</code>:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">root@server:~<span class="comment"># docker ps</span></span><br><span class="line">CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS              PORTS                NAMES</span><br><span class="line">59ee466f6b15   portainer/agent:latest          <span class="string">&quot;./agent&quot;</span>                About a minute ago   Up About a minute                        portainer_agent.xbb8k6r7j1tk9gozjku7e43wr.5sa6b3e8cl6hyu0snlt387sgv</span><br><span class="line">2db7dd4bfba0   portainer/portainer-ce:latest   <span class="string">&quot;/portainer -H tcp:/…&quot;</span>   About a minute ago   Up About a minute   8000/tcp, 9443/tcp   portainer_portainer.1.gpuvu3pqmt1m19zxfo44v7izx</span><br></pre></td></tr></table></figure><button type="button" class="tab-to-top" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div></div><h2 id="Accessing"><a href="#Accessing" class="headerlink" title="Accessing"></a>Accessing</h2><p>Access the Portainer Server on web browser:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://localhost:9443</span><br></pre></td></tr></table></figure><p>Replace <code>localhost</code> with the relevant IP address.</p><p>More info: <a href="https://docs.portainer.io/start/install-ce">Portainer</a></p><div class="note info flat"><p>Sorry for any grammatical or spelling errors. I am practicing my english.</p></div>]]></content>
+    
+    
+    <summary type="html">This post contains information on how to install and launch Portainer on an Ubuntu distribution.</summary>
+    
+    
+    
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/categories/Tutorials/"/>
+    
+    <category term="Docker" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/"/>
+    
+    <category term="Portainer" scheme="https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/"/>
+    
+    
+    <category term="Tutorials" scheme="https://bernardoaquino.tech/tags/Tutorials/"/>
+    
+    <category term="Docker" scheme="https://bernardoaquino.tech/tags/Docker/"/>
+    
+    <category term="Ubuntu" scheme="https://bernardoaquino.tech/tags/Ubuntu/"/>
+    
+    <category term="Portainer" scheme="https://bernardoaquino.tech/tags/Portainer/"/>
     
   </entry>
   
