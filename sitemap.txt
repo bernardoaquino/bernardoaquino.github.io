@@ -8,10 +8,10 @@ https://bernardoaquino.tech/categories/
 https://bernardoaquino.tech/
 https://bernardoaquino.tech/tags/Tutorials/
 https://bernardoaquino.tech/tags/Docker/
+https://bernardoaquino.tech/tags/Traefik/
 https://bernardoaquino.tech/tags/Portainer/
 https://bernardoaquino.tech/tags/Ubuntu/
-https://bernardoaquino.tech/tags/Traefik/
 https://bernardoaquino.tech/categories/Tutorials/
 https://bernardoaquino.tech/categories/Tutorials/Docker/
-https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/
 https://bernardoaquino.tech/categories/Tutorials/Docker/Traefik/
+https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/
