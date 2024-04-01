@@ -1,0 +1,17 @@
+https://bernardoaquino.tech/posts/how-to-install-portainer-on-ubuntu-22-04/
+https://bernardoaquino.tech/posts/how-to-install-docker-on-ubuntu-22-04/
+https://bernardoaquino.tech/posts/how-to-install-and-configure-traefik-on-docker/
+https://bernardoaquino.tech/about/index.html
+https://bernardoaquino.tech/link/index.html
+https://bernardoaquino.tech/categories/index.html
+https://bernardoaquino.tech/tags/index.html
+https://bernardoaquino.tech/
+https://bernardoaquino.tech/tags/Tutorials/
+https://bernardoaquino.tech/tags/Docker/
+https://bernardoaquino.tech/tags/Traefik/
+https://bernardoaquino.tech/tags/Ubuntu/
+https://bernardoaquino.tech/tags/Portainer/
+https://bernardoaquino.tech/categories/Tutorials/
+https://bernardoaquino.tech/categories/Tutorials/Docker/
+https://bernardoaquino.tech/categories/Tutorials/Docker/Traefik/
+https://bernardoaquino.tech/categories/Tutorials/Docker/Portainer/
